@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="products.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="footer.css" />
+    <title>eCommerce</title>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="center-nav">
+        <nav class="navbar">
+          <h3 class="logo">eCommerce</h3>
+          <ul class="close-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">cart</a></li>
+            <li>
+              <a href="#" class="cart-box"
+                ><i class="fa-solid fa-magnifying-glass search"></i>Search
+                Item</a
+              >
+            </li>
+            <div class="show-search active">
+              <input
+                class="search-bar"
+                type="text"
+                placeholder="Search Items"
+              />
+              <i class="fa-solid fa-magnifying-glass glass"></i>
+            </div>
+          </ul>
+          <i class="fa-solid fa-bars fa-2x hamb"></i>
+          <!--?Sidebar-->
+          <div class="sidebar active">
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">cart</a></li>
+              <li>
+                <a href="#" class="cart-box"
+                  ><i class="fa-solid fa-magnifying-glass search"></i>Search
+                  Item</a
+                >
+              </li>
+            </ul>
+            <i class="fa-solid fa-arrow-left close-btn"></i>
+          </div>
+        </nav>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="./video/clothing-1006.mp4"
+          class="video-fixed"
+          autoplay
+          loop
+          muted
+        ></video>
+      </div>
+      <div class="content">
+        <h3 class="title">eCommerce</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque rerum
+          est enim quasi esse aperiam non facilis quia nulla, fuga eum
+          cupiditate nobis commodi perspiciatis modi eaque voluptatum corporis
+          id!
+        </p>
+        <button class="btn">
+          <a href="#prod"
+            ><i class="fa-solid fa-cart-shopping cart"></i>Order Now</a
+          >
+        </button>
+      </div>
+      <div class="center-nav">
+        <div class="items">
+          <div class="grid">
+            <div class="world">
+              <h3 class="item">
+                <i class="fa-solid fa-chart-line icon"></i>Around the world
+              </h3>
+              <p>5m items sold</p>
+            </div>
+            <div class="users">
+              <h3 class="item"><i class="fa-solid fa-users icon"></i>Users</h3>
+              <p>10m active users</p>
+            </div>
+            <div class="seller">
+              <h3 class="item">
+                <i class="fa-solid fa-earth-asia icon"></i>Sellers
+              </h3>
+              <p>500k sellers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="prod">
+      <div class="prod-container">
+        <h3 class="title">products</h3>
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass search"></i>
+          <input type="search" placeholder="Search products" />
+        </div>
+      </div>
+      <div class="center-nav">
+        <div class="prd-itm-grd">
+          <div class="flex-itm" data-id="ply">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n" data-id="buy-now">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active" id="buy-now">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+          <div class="flex-itm">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <div class="show-success-atc active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn-atc"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Succesfuly add to cart</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+          <div class="flex-itm">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+          <div class="flex-itm">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+          <div class="flex-itm">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+          <div class="flex-itm">
+            <img
+              src="https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+              class="itm-img"
+            />
+            <h3 class="title1">Nike</h3>
+            <p class="price">$24.00</p>
+            <button class="by-n">Buy Now</button>
+            <button class="at-c">
+              <i class="fa-solid fa-cart-shopping cart"></i>Add to Cart
+            </button>
+          </div>
+          <!--!BTNS-->
+          <div class="show-success active">
+            <div class="container-pop-up">
+              <i class="fa-solid fa-xmark times-btn"></i>
+              <div class="pop-up">
+                <img
+                  class="gif-pop"
+                  src="https://i.pinimg.com/originals/35/f3/23/35f323bc5b41dc4269001529e3ff1278.gif"
+                />
+              </div>
+              <div class="success-title">
+                <h3>Thank you for purchased</h3>
+              </div>
+            </div>
+          </div>
+          <!--!Divider-->
+        </div>
+      </div>
+    </section>
+    <section id="footer">
+      <p>Copy 2023 | All Rights Reserved</p>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

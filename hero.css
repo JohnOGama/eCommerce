@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(187, 130, 25);
+}
+
+#hero .center-nav {
+  display: grid;
+  place-items: center;
+}
+
+#hero .navbar {
+  position: absolute;
+  color: white;
+  top: 0;
+  width: 100%;
+  min-width: 350px;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  padding: 30px 50px;
+}
+
+#hero .navbar ul {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+}
+
+#hero .navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.8rem;
+}
+
+#hero .navbar .cart-box {
+  border: 2px solid orange;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: orange;
+  transition: 0.3s ease;
+}
+
+#hero .navbar .cart-box:hover {
+  color: white;
+  background: orange;
+}
+
+#hero .navbar a:hover {
+  color: orange;
+}
+
+#hero .navbar .search {
+  margin-right: 10px;
+}
+
+#hero .navbar .logo {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#hero .video-fixed {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  filter: brightness(30%);
+  background-attachment: fixed;
+  z-index: -50;
+}
+
+#hero .content {
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 20px;
+  min-width: 300px;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+#hero .btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#hero .btn {
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: 2px solid orange;
+  background: transparent;
+  border-radius: 1.3rem;
+  margin-top: 15px;
+  color: orange;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#hero .search {
+  transition: 0s;
+}
+
+#hero .btn:hover {
+  background: orange;
+  color: white;
+}
+
+#hero .btn .cart {
+  margin-right: 10px;
+}
+
+.scroll {
+  color: black;
+}
+
+#hero .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero .grid {
+  display: grid;
+  max-width: 1200px;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(3, 1fr);
+  height: 200px;
+  min-width: 100px;
+  margin-top: 10px;
+  color: white;
+  column-gap: 100px;
+}
+
+#hero .grid .icon {
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+
+.world,
+.users,
+.seller {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hero .grid .item {
+  font-size: 1.5rem;
+}
+
+#hero .grid p {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+
+#hero .hamb {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#hero .sidebar ul li a {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  display: block;
+  line-height: 40px;
+  letter-spacing: 3px;
+  position: relative;
+  padding: 0;
+  transition: 0.3s ease;
+}
+
+#hero .sidebar a:hover:not(.cart-box) {
+  padding-left: 5px;
+}
+
+#hero .sidebar ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -50%);
+}
+
+#hero .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.1s ease color;
+  color: black;
+}
+
+#hero .sidebar .cart-box {
+  font-size: 13px;
+  padding: 0px 10px;
+  margin-top: 10px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(180, 117, 0);
+  width: 350px;
+  height: 100vh;
+  transform: translateX(0);
+  transition: 0.5s all;
+}
+
+.active.sidebar {
+  visibility: hidden;
+  transform: translateX(-100%);
+}
+
+@media screen and (max-width: 768px) {
+  #hero .content .title,
+  .item {
+    font-size: 2rem;
+  }
+  #hero .content p {
+    font-size: 13px;
+  }
+  #hero .grid .item {
+    font-size: 1rem;
+  }
+  #hero .grid p {
+    font-size: 1rem;
+  }
+  #hero .grid .icon {
+    font-size: 1.3rem;
+  }
+  #hero .grid {
+    column-gap: 20px;
+  }
+  #hero .hamb {
+    display: block;
+  }
+
+  #hero .close-nav {
+    display: none;
+    visibility: hidden;
+  }
+  #hero .navbar {
+    margin-right: 10px;
+    padding: 30px 20px;
+  }
+  #hero .navbar a {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .grid {
+    vertical-align: top;
+  }
+}
